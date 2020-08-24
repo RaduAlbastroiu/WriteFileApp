@@ -1,0 +1,15 @@
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\bin\Debug\WriteFileApp.exe.config
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\bin\Debug\WriteFileApp.exe
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\bin\Debug\WriteFileApp.pdb
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\WriteFileApp.csprojAssemblyReference.cache
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\MainWindow.g.cs
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\App.g.cs
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\WriteFileApp_MarkupCompile.cache
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\WriteFileApp_MarkupCompile.lref
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\MainWindow.baml
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\WriteFileApp.g.resources
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\WriteFileApp.Properties.Resources.resources
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\WriteFileApp.csproj.GenerateResource.cache
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\WriteFileApp.csproj.CoreCompileInputs.cache
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\WriteFileApp.exe
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Debug\WriteFileApp.pdb
