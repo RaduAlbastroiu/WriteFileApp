@@ -7,11 +7,13 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MessageBox = System.Windows.MessageBox;
 
 namespace WriteFileApp
 {
@@ -20,9 +22,35 @@ namespace WriteFileApp
   /// </summary>
   public partial class MainWindow : Window
   {
+    private FolderBrowserDialog folderBrowserDialog1;
+    private OpenFileDialog openFileDialog1;
+
+    private string openFileName, folderName;
+
     public MainWindow()
     {
       InitializeComponent();
+      this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+      this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+    }
+
+    private void ButtonClick(object sender, RoutedEventArgs e)
+    {
+      var saveThisToFile = "This is some sample text to save";
+      var fileName = "MyOutput.txt";
+
+      DialogResult result = folderBrowserDialog1.ShowDialog();
+      
+      folderName = folderBrowserDialog1.SelectedPath;
+      label.Content = folderName;
+
+      //This will save some text to a file in the same folder as your project exe file
+      using (System.IO.StreamWriter sw = System.IO.File.CreateText(fileName))
+      {
+        sw.Write(saveThisToFile);
+      }
+
+      MessageBox.Show("File Created");
     }
   }
 }
