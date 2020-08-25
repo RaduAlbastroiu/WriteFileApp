@@ -34,18 +34,20 @@ namespace WriteFileApp
       this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
     }
 
-    private void ButtonClick(object sender, RoutedEventArgs e)
+    private void ChooseFolder(object sender, RoutedEventArgs e)
     {
-      var saveThisToFile = "This is some sample text to save";
-      var fileName = "MyOutput.txt";
-
       DialogResult result = folderBrowserDialog1.ShowDialog();
       
       folderName = folderBrowserDialog1.SelectedPath;
       label.Content = folderName;
+    }
 
-      //This will save some text to a file in the same folder as your project exe file
-      using (System.IO.StreamWriter sw = System.IO.File.CreateText(fileName))
+    private void CreateFile(object sender, RoutedEventArgs e)
+    {
+      var saveThisToFile = "This is some sample text to save";
+      var fileName = "MyOutput.txt";
+
+      using (System.IO.StreamWriter sw = System.IO.File.CreateText(folderName + "/" + fileName))
       {
         sw.Write(saveThisToFile);
       }
