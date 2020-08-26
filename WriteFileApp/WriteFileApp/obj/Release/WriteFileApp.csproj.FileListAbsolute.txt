@@ -12,3 +12,4 @@ D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Release\WriteFileApp
 D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Release\WriteFileApp.csproj.CoreCompileInputs.cache
 D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Release\WriteFileApp.exe
 D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Release\WriteFileApp.pdb
+D:\TestJobAI\PSF\WriteFileApp\WriteFileApp\WriteFileApp\obj\Release\WriteFileApp.csprojAssemblyReference.cache

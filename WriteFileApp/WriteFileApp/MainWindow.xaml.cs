@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +31,7 @@ namespace WriteFileApp
     public MainWindow()
     {
       InitializeComponent();
+    
       this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
       this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
     }
@@ -47,12 +49,17 @@ namespace WriteFileApp
       var saveThisToFile = "This is some sample text to save";
       var fileName = "MyOutput.txt";
 
-      using (System.IO.StreamWriter sw = System.IO.File.CreateText(folderName + "/" + fileName))
+      var path = folderName != null ? folderName + "/" + fileName : fileName;
+      //try
       {
-        sw.Write(saveThisToFile);
+        using (System.IO.StreamWriter sw = System.IO.File.CreateText(path))
+        {
+          sw.Write(saveThisToFile);
+          label1.Content = "File Written";
+        }
       }
-
-      MessageBox.Show("File Created");
+      //catch { }
+      
     }
   }
 }
