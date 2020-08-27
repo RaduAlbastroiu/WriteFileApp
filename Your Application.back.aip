@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="17.3" version="17.4" Modules="architect" RootPath="." Language="en" Id="{FD0AB26F-80C1-4D4C-89F4-47C1398BBD82}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="17.3" version="17.3" Modules="architect" RootPath="." Language="en" Id="{FD0AB26F-80C1-4D4C-89F4-47C1398BBD82}">
   <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
     <ROW Name="AssetGenConvertedAttrNames" Value="true"/>
     <ROW Name="AssetGenDestFolderPath" Value="Generated Assets" ValueType="1"/>
@@ -9,6 +9,7 @@
     <ROW Name="AssetGenVisualAssets" Value="Small Tile, Medium Tile, Wide Tile, Large Tile, App Icon, Splash Screen, Badge Logo"/>
     <ROW Name="AssetGenVisualAssetsSaved" Value="true"/>
     <ROW Name="MigrationUninstallCode" Value="{F2813446-BD82-4CA1-84E0-E0E31FF40A60}"/>
+    <ROW Name="PSFInsertTraceShim" Value="true"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
@@ -65,7 +66,6 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.FixupComponent">
     <ROW RowType="1" Content="ProgramFilesFolder\MyApp" Pattern=".*\.lox" ReadOnly="false" Exclusion="false"/>
-    <ROW RowType="1" Content="ProgramFilesFolder" Pattern="MyOutput\.txt" ReadOnly="false" Exclusion="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
     <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>

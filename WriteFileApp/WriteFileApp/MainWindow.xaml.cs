@@ -50,7 +50,7 @@ namespace WriteFileApp
       var fileName = "MyOutput.txt";
 
       var path = folderName != null ? folderName + "/" + fileName : fileName;
-      //try
+      try
       {
         using (System.IO.StreamWriter sw = System.IO.File.CreateText(path))
         {
@@ -58,7 +58,7 @@ namespace WriteFileApp
           label1.Content = "File Written";
         }
       }
-      //catch { }
+      catch { }
       
     }
   }
